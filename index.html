@@ -4,12 +4,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Somerville Bag</title>
+	<script
+		src="http://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  			$("#nav li").hover(function(){
+    			$(".dropdown-nav", this).slideDown(100);
+  			}, function(){
+    			$(".dropdown-nav", this).stop().slideUp(100);
+  			});
+		})
+	</script>
 </head>
 <body>
 	<!--Standard Nav Bar -->
 	<ul id="nav">
 		<li><a class="current" href="index.html" onclick="return false">Homepage</a></li>
-		<li><a href="roster.html">Roster</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="roster.html">Roster</a>
+			<ul class="dropdown-nav">
+        		<li><a href="roster.html">2020 Roster</a></li>
+        		<li><a href="history.html">Roster History</a></li>
+      		</ul>
+      	</li>
 		<li><a href="contact.html">Contact Us</a></li>
 	</ul>
 	<h1 id="title">Somerville Bag Homepage</h1>

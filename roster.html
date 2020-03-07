@@ -3,15 +3,111 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		/*2 COLUMN ROSTER STYLE*/
+		/*overarching table*/
+		ul.table {
+			width:75%; /*media query this later*/
+			list-style-type: none; /*ditch list bits*/
+			overflow:hidden; /*allow floating to work right?*/
+			margin: auto; /*center on page*/
+			padding: 0;
+		}
+		@media (max-width: 1100px) {
+			ul.table {
+				width:100%; /*under 1100px, take up whole page*/
+			}
+		}
+		@media (max-width: 700px) {
+			ul.table {
+				width:85%; /*since only 1 column now*/
+			}
+		}
+		/*column border*/
+		ul.table li {
+			display:block;
+			float:left; /*put columns next to each other*/
+			width:50%; /*2 columns, half width each*/
+			/*background-color:#C00000;*/ /*darkish red*/
+		}
+		@media (max-width: 700px) {
+			ul.table li {
+				float:none; /*no longer 2 column*/
+				width:100%;
+			}
+		}
+		/*each column*/
+		ul.column {
+			list-style-type:none; /*ditch list bits*/
+			padding:0; /*spacing*/
+		}
+		/*actual elements*/
+		ul.column li {
+			/*spacing stuff*/
+			box-sizing: border-box; /*size based on whole box*/
+			width:85%; /*% of column width*/
+			float:none; /*override left float*/
+			/*text stuff*/
+			color:white; /*white text*/
+			text-align:center; /*center text*/
+			font-size:1.5em;
+		}
+		ul.column li a {
+			box-sizing: border-box; /*size after padding and margin*/
+			margin: 0px auto 15% auto; /*no top, center sideways, some bottom*/
+			padding: 20% 0; /*give text space within box*/
+			/*text stuff*/
+			text-decoration: none;
+			color:white;
+			display:block; /*fill entire box*/
+			width:100%; /*same*/
+			height:100%; /*same*/
+			background-color:#800000;
+		}
+		/*Image styling*/
+		img {
+			/*styling for words to go over image*/
+		}
+	</style>
 	<title>2020 Roster - Somerville Bag</title>
 </head>
 <body>
 	<!--Standard Nav Bar -->
 	<ul id="nav">
 		<li><a href="index.html">Homepage</a></li>
+		<li><a href="about.html">About</a></li>
 		<li><a class="current" href="roster.html" onclick="return false">Roster</a></li>
 		<li><a href="contact.html">Contact Us</a></li>
 	</ul>
-	<p>Page under construction.</p>
+	<h1 id="title">2020 Roster</h1>
+	<h3>Thank you, have a nice day!</h3>
+	<p>Page under construction. Notes: Put imgs and stuff within inner li s,
+	jquery animation onhover?</p>
+	<ul class="table">
+		<li><ul class="column">
+			<li><a href="roster1.html">Name 1</a></li>
+			<li><a href="#">Name 2</a></li>
+			<li><a href="#">Name 3</a></li>
+			<li><a href="#">Name 4</a></li>
+			<li><a href="#">Name 5</a></li>
+			<li><a href="#">Name 6</a></li>
+			<li><a href="#">Name 7</a></li>
+			<li><a href="#">Name 8</a></li>
+			<li><a href="#">Name 9</a></li>
+			<li><a href="#">Name 10</a></li>
+		</ul></li>
+		<li><ul class="column">
+			<li><a href="roster2.html">Name 1</a></li>
+			<li><a href="#"><img src="roster_placeholder.png">Name 1</img></a></li>
+			<li><a href="#">Name 1</a></li>
+			<li><a href="#">Name 1</a></li>
+			<li><a href="#">Name 1</a></li>
+			<li><a href="#">Name 1</a></li>
+			<li><a href="#">Name 17</a></li>
+			<li><a href="#">Name 18</a></li>
+			<li><a href="#">Name 19</a></li>
+			<li><a href="#">Name 20</a></li>
+		</ul></li>
+	</ul>
 </body>
 </html>

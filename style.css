@@ -9,7 +9,7 @@ ul#nav {
 ul#nav li a {
 	font-family: Verdana, Geneva, sans-serif;
 	float:left; /*make it horizontal*/
-	display: block; /*make whole box clickable*/
+	/*display: block;*/ /*make whole box clickable*/
 	color: white; /*text color*/
 	text-align: center;
 	padding: 14px 16px;
@@ -21,12 +21,31 @@ ul#nav li a:hover:not(.current) {
 ul#nav li a.current {
 	background-color: #D00000; /*current page highlighted*/
 }
+/*roster dropdown rules*/
+ul.dropdown-nav{
+	list-style-type: none; /*remove list bits*/
+	display: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	clear:both;
+	position:absolute;
+}
+ul.dropdown-nav li {
+	float:left;
+	clear:both;
+}
+
 /*TITLE RULES*/
 h1#title {
 	font-family: Verdana, Geneva, sans-serif;
 	text-align: center;
 }
 /*Text rules*/
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
 h3,p {
 	width: 50%;
 	margin: 20px auto;
