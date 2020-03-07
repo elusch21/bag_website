@@ -45,6 +45,7 @@
 		ul.column li {
 			/*spacing stuff*/
 			box-sizing: border-box; /*size based on whole box*/
+			margin:auto; /*center it*/
 			width:85%; /*% of column width*/
 			float:none; /*override left float*/
 			/*text stuff*/
@@ -55,7 +56,7 @@
 		ul.column li a {
 			box-sizing: border-box; /*size after padding and margin*/
 			margin: 0px auto 15% auto; /*no top, center sideways, some bottom*/
-			padding: 20% 0; /*give text space within box*/
+			padding: 0; /*give text space within box*/
 			/*text stuff*/
 			text-decoration: none;
 			color:white;
@@ -63,10 +64,21 @@
 			width:100%; /*same*/
 			height:100%; /*same*/
 			background-color:#800000;
+			/*allow text to center*/
+			position:relative;
 		}
 		/*Image styling*/
 		img {
-			/*styling for words to go over image*/
+			max-width:100%;
+			height:auto;
+		}
+		div.rostext {
+			/*styling for words to go centered over image*/
+			position:absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color:black;
 		}
 	</style>
 	<title>2020 Roster - Somerville Bag</title>
@@ -85,28 +97,28 @@
 	jquery animation onhover?</p>
 	<ul class="table">
 		<li><ul class="column">
-			<li><a href="roster1.html">Name 1</a></li>
-			<li><a href="#">Name 2</a></li>
-			<li><a href="#">Name 3</a></li>
-			<li><a href="#">Name 4</a></li>
-			<li><a href="#">Name 5</a></li>
-			<li><a href="#">Name 6</a></li>
-			<li><a href="#">Name 7</a></li>
-			<li><a href="#">Name 8</a></li>
-			<li><a href="#">Name 9</a></li>
-			<li><a href="#">Name 10</a></li>
+			<li><a href="roster1.html"><img src="roster_placeholder.png"><div class="rostext">Name 1</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 2</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 3</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 4</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 5</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 6</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 7</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 8</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 9</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 10</div></a></li>
 		</ul></li>
 		<li><ul class="column">
-			<li><a href="roster2.html">Name 1</a></li>
-			<li><a href="#"><img src="roster_placeholder.png">Name 1</img></a></li>
-			<li><a href="#">Name 1</a></li>
-			<li><a href="#">Name 1</a></li>
-			<li><a href="#">Name 1</a></li>
-			<li><a href="#">Name 1</a></li>
-			<li><a href="#">Name 17</a></li>
-			<li><a href="#">Name 18</a></li>
-			<li><a href="#">Name 19</a></li>
-			<li><a href="#">Name 20</a></li>
+			<li><a href="roster2.html"><img src="roster_placeholder.png"><div class="rostext">Name 11</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 12</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 13</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 14</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 15</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 16</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 17</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 18</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 19</div></a></li>
+			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 20</div></a></li>
 		</ul></li>
 	</ul>
 </body>
