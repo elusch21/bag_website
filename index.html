@@ -5,18 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Somerville Bag</title>
 	<script
-		src="http://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous">
+		src="jquery-3.4.1.min.js">
 	</script>
 	<script type="text/javascript">
+		/*fade in roster elements*/
 		$(document).ready(function(){
-  			$("#nav li").hover(function(){
-    			$(".dropdown-nav", this).slideDown(100);
-  			}, function(){
-    			$(".dropdown-nav", this).stop().slideUp(100);
-  			});
-		})
+			$(".fade").fadeIn(1500);
+		});
 	</script>
 </head>
 <body>
@@ -39,8 +34,9 @@
 	<p></p>
 	<h3>Passionate about Ultimate and in Boston this summer? You've come to the right place.</h3>
 	<p>Somerville Bag is a local club Ultimate organization dedicated to providing mediocre content
-	for those pursing the great sport of Ultimate Frisbee. Founded in 20XX by Tufts students, Somerville
-	Bag partners with the Tufts EMEN and USAU to provide oppportunities for players looking to follow
-	their Ultimate passion in club. Disclaimer: Bag bag Bag.</p>
+	for those pursing the great sport of Ultimate Frisbee. Founded in 20XX by local students, Somerville
+	Bag partners with the EMEN and USAU to provide oppportunities for players looking to follow
+	their Ultimate passion in club. Disclaimer: Website not official - Bag bag Bag.</p>
+	<div style="text-align: center"><img class="fade" src="teamphoto.jfif" alt="Team Pic" style="margin:0 auto; padding-top:20px; max-width:80%; display:none"></div>
 </body>
 </html>

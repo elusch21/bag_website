@@ -74,6 +74,7 @@
 		}
 		div.rostext {
 			/*styling for words to go centered over image*/
+			max-width:100%;
 			position:absolute;
 			top: 85%;
 			left: 50%;
@@ -82,6 +83,7 @@
 			/*box*/
 			background-color:#AAA;
 			padding:10px;
+			white-space: nowrap;
 		}
 	</style>
 	<script
@@ -94,12 +96,12 @@
 		});
 		/*hover stuff*/
 		$(document).ready(function(){
-  			$("div.rostext").hover(function(){
+  			$("ul.column li a").hover(function(){
+    			$(this).children("div").css("background-color", "#D00000");
     			$(this).css("background-color", "#D00000");
-    			$(this).parent().css("background-color", "#D00000");
   			}, function(){
-    			$(this).css("background-color", "#AAA");
-    			$(this).parent().css("background-color", "#800000");
+    			$(this).children("div").css("background-color", "#AAA");
+    			$(this).css("background-color", "#800000");
   			});
 		});
 	</script>
@@ -114,41 +116,40 @@
 		<div class="dropdown">
 			<button class="dropbtn">Roster</button>
 			<div class="dropdown-content">
-        		<a href="roster.html">2020 Roster</a>
+        		<a href="roster.html">Bag 2020 Roster</a>
         		<a href="history.html">Roster History</a>
       		</div>
       	</div>
 		<a href="contact.html">Contact Us</a>
 		<a href="tryout.html">Tryout</a>
 	</div>
-	<h1 id="title">2020 Roster</h1>
+	<h1 id="title">Bag 2020 Roster</h1>
 	<h3>Thank you, have a nice day!</h3>
-	<p>Page under construction. Notes: Put imgs and stuff within inner li s,
-	jquery animation onhover?</p>
+	<p>Check out our 2020 roster here. Everyone here represents the TEAM!</p>
 	<ul class="table" style="display:none">
 		<li><ul class="column">
-			<li><a href="roster1.html"><img src="roster_placeholder.png"><div class="rostext">Name 1</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 2</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 3</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 4</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 5</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 6</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 7</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 8</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 9</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 10</div></a></li>
+			<li><a href="roster1.html"><img src="roster_placeholder.png"><div class="rostext">Oliver Newland (Founder)</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg3.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_placeholder.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg3.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_placeholder.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg3.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_placeholder.png"><div class="rostext">Empty Position</div></a></li>
 		</ul></li>
 		<li><ul class="column">
-			<li><a href="roster2.html"><img src="roster_placeholder.png"><div class="rostext">Name 11</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 12</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 13</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 14</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 15</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 16</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 17</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 18</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 19</div></a></li>
-			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 20</div></a></li>
+			<li><a href="roster2.html"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg3.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_placeholder.png"><div class="rostext">Name 13</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg3.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_placeholder.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg3.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_placeholder.png"><div class="rostext">Empty Position</div></a></li>
+			<li><a href="#" onclick="return false"><img src="roster_eg2.png"><div class="rostext">Empty Position</div></a></li>
 		</ul></li>
 	</ul>
 </body>
