@@ -56,7 +56,7 @@
 		ul.column li a {
 			box-sizing: border-box; /*size after padding and margin*/
 			margin: 0px auto 15% auto; /*no top, center sideways, some bottom*/
-			padding: 0; /*give text space within box*/
+			padding: 7.5% 0px; /*give text space within box*/
 			/*text stuff*/
 			text-decoration: none;
 			color:white;
@@ -69,34 +69,65 @@
 		}
 		/*Image styling*/
 		img {
-			max-width:100%;
+			max-width:90%;
 			height:auto;
 		}
 		div.rostext {
 			/*styling for words to go centered over image*/
 			position:absolute;
-			top: 50%;
+			top: 85%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			color:black;
+			/*box*/
+			background-color:#AAA;
+			padding:10px;
 		}
 	</style>
+	<script
+		src="http://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		/*fade in roster elements*/
+		$(document).ready(function(){
+			$("ul.table").fadeIn(1500);
+		});
+		/*hover stuff*/
+		$(document).ready(function(){
+  			$("div.rostext").hover(function(){
+    			$(this).css("background-color", "#D00000");
+    			$(this).parent().css("background-color", "#D00000");
+  			}, function(){
+    			$(this).css("background-color", "#AAA");
+    			$(this).parent().css("background-color", "#800000");
+  			});
+		});
+	</script>
 	<title>2020 Roster - Somerville Bag</title>
 </head>
 <body>
+	<img src="logo.png" alt="Banner" id="banner">
 	<!--Standard Nav Bar -->
-	<ul id="nav">
-		<li><a href="index.html">Homepage</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a class="current" href="roster.html" onclick="return false">Roster</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
-		<li><a href="tryout.html">Tryout</a></li>
-	</ul>
+	<div class="nav">
+		<a href="index.html">Homepage</a>
+		<a href="about.html">About</a>
+		<div class="dropdown">
+			<button class="dropbtn">Roster</button>
+			<div class="dropdown-content">
+        		<a href="roster.html">2020 Roster</a>
+        		<a href="history.html">Roster History</a>
+      		</div>
+      	</div>
+		<a href="contact.html">Contact Us</a>
+		<a href="tryout.html">Tryout</a>
+	</div>
 	<h1 id="title">2020 Roster</h1>
 	<h3>Thank you, have a nice day!</h3>
 	<p>Page under construction. Notes: Put imgs and stuff within inner li s,
 	jquery animation onhover?</p>
-	<ul class="table">
+	<ul class="table" style="display:none">
 		<li><ul class="column">
 			<li><a href="roster1.html"><img src="roster_placeholder.png"><div class="rostext">Name 1</div></a></li>
 			<li><a href="#"><img src="roster_placeholder.png"><div class="rostext">Name 2</div></a></li>
