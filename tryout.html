@@ -10,19 +10,19 @@
 	<!--Standard Nav Bar -->
 	<div class="nav">
         <a href="index.html">Homepage</a>
-        <a href="about.html">About</a>
+        <a href="roster.html">Roster</a>
         <div class="dropdown">
-            <button class="dropbtn">Roster</button>
+            <button class="dropbtn">About</button>
             <div class="dropdown-content">
-                <a href="roster.html">2020 Roster</a>
-                <a href="history.html">Roster History</a>
+                <a href="about.html">Pillars</a>
+                <a href="history.html">History</a>
             </div>
         </div>
         <a href="contact.html">Contact Us</a>
         <a class="current" href="tryout.html" onclick="return false">Tryout</a>
     </div>
 	<center><h1>Tryout for Somerville BAG!</h1>
-    <form>
+    <form onsubmit = "return validate()">
         <p>*First Name:
         <input type="text" id="fname" name="fname"></input><br><br>
         *Last Name:
@@ -55,7 +55,7 @@
     </form>
 
     <script language="javascript">
-        document.forms[0].onsubmit = function() {validate()};
+        /*document.forms[0].onsubmit = function() {validate()};*/
 
 		function validate() {
 			var first_name = document.getElementsByName('fname')[0].value;
@@ -69,12 +69,16 @@
 
 			if (!is_first) {
 				alert("First Name Required");
+                return false;
 			} else if (!is_last) {
 				alert("Last Name Required!");
+                return false;
 			} else if (!is_email) {
 				alert("Invalid Email!");
+                return false;
 			} else if (why_bag == "" || why_bag == "-- Enter Response Here --") {
 				alert("Why Do You Want to Play BAG?");
+                return false;
 			} else {
 				alert("Thank you " + first_name + " for your interest in the BAG.\n A captain will be in contact with you about tryouts in 2-3 days.\n REDUCE REUSE RECYCLE, the BAG!");
 			}
