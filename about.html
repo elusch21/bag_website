@@ -4,6 +4,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>About the TEAM - Somerville Bag</title>
+	<style>
+		.column {
+ 			 float: left;
+ 			 width: 33.33%;
+ 			 background-color: #add8e6;
+ 			 font-size: 2vw;
+		}
+		.column2 {
+ 			 float: left;
+ 			 width: 33.33%;
+ 			 background-color: #90EE90;
+ 			 font-size: 2vw;
+		}
+		.column3 {
+ 			 float: left;
+ 			 width: 33.33%;
+ 			 background-color: #ffcccb;
+ 			 font-size: 2vw;
+		}
+		
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+		#pic1,#pic2, #pic3 {
+  			display: block;
+  			margin: 0px auto;
+  			padding: 0px;
+  			max-width: 90%;
+		}
+
+		@media screen and (max-width: 600px) {
+  			.column {
+   				 width: 100%;
+  			}
+		}
+		p {
+			font-size: 1vw;
+		}
+	</style>
 </head>
 <body>
 	<img src="logo.png" alt="Banner" id="banner">
@@ -21,6 +63,30 @@
 		<a href="contact.html">Contact Us</a>
 		<a href="tryout.html">Tryout</a>
 	</div>
-	<p>Page under construction.</p>
+<center>
+	<h1> Three Pillars of BAG </h1>
+<table>
+	<div class="row">
+ 		<div class="column"> Pillar 1: Try New Things  <br>
+ 			<img src="bag.jfif" alt="goofy" width="300" height="345" id="pic1">  
+ 			<p> We love to try new things. We will run any type of offense, from hex to line stack. <br> <br> 
+ 			    As for defensive sets, we have tried snake in the grass, and 7 man cup before too!  <br> <br>
+ 				If you have any ideas, we will always be willing to try it!</p>
+ 		</div>
+  		<div class="column2"> Pillar 2: Have Fun  <br>
+  			<img src="aboutpic.jpg" alt="TEAM" width="460" height="345" id="pic2"> 
+  			<p> The most important pillar of BAG. Whether it is at practice on a dreary Sunday afternoon, or
+  				in the finals at regionals, we want to be having fun. <br> <br> To us, it's more than winning or losing.
+  				Let's enjoy the memories and time we spend together as a TEAM. </p>
+  		</div>
+  		<div class="column3"> Pillar 3: Compete  <br>
+  			<img src="jac.jpg" alt="bid" width="460" height="345" id="pic3"> 
+  			<p> While we can be goofy and crazy, we still love to compete.  <br><br> We are a regionals level team that competes in
+  				three open tournaments every summer. <br> <br> We strive to push each other
+  				to be the best players that we can be. </p>
+  		</div>
+	</div>
+</table>
+</center>
 </body>
 </html>
