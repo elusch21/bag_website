@@ -20,19 +20,21 @@
 	</script>
 </head>
 <body>
+	<img src="logo.png" alt="Banner" id="banner">
 	<!--Standard Nav Bar -->
-	<ul id="nav">
-		<li><a class="current" href="index.html" onclick="return false">Homepage</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="roster.html">Roster</a>
-			<ul class="dropdown-nav">
-        		<li><a href="roster.html">2020 Roster</a></li>
-        		<li><a href="history.html">Roster History</a></li>
-      		</ul>
-      	</li>
-		<li><a href="contact.html">Contact Us</a></li>
-		<li><a href="tryout.html">Tryout</a></li>
-	</ul>
+	<div class="nav">
+		<a class="current" href="index.html" onclick="return false">Homepage</a>
+		<a href="about.html">About</a>
+		<div class="dropdown">
+			<button class="dropbtn">Roster</button>
+			<div class="dropdown-content">
+        		<a href="roster.html">2020 Roster</a>
+        		<a href="history.html">Roster History</a>
+      		</div>
+      	</div>
+		<a href="contact.html">Contact Us</a>
+		<a href="tryout.html">Tryout</a>
+	</div>
 	<h1 id="title">Somerville Bag Homepage</h1>
 	<p></p>
 	<h3>Passionate about Ultimate and in Boston this summer? You've come to the right place.</h3>

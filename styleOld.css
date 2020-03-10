@@ -1,0 +1,78 @@
+/* BANNER RULES */
+img#banner {
+	max-width:50%;
+	display:block;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+@media (max-width:1300px) {
+	img#banner {
+		max-width:90%;
+	}
+}
+/* NAV BAR RULES*/
+ul#nav {
+	list-style-type: none; /*remove list bits*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333; /*dark grey*/
+}
+ul#nav li a {
+	font-family: Verdana, Geneva, sans-serif;
+	float:left; /*make it horizontal*/
+	/*display: block;*/ /*make whole box clickable*/
+	color: white; /*text color*/
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none; /*no underlines, etc*/
+}
+ul#nav li a:hover:not(.current) {
+	background-color: #000; /*if not cur page, make darker on hover*/
+}
+ul#nav li a.current {
+	background-color: #D00000; /*current page highlighted*/
+}
+/*roster dropdown rules*/
+ul.dropdown-nav{
+	list-style-type: none; /*remove list bits*/
+	display: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	clear:both;
+	position:absolute;
+}
+ul.dropdown-nav li {
+	float:left;
+	clear:both;
+}
+
+/*TITLE RULES*/
+h1#title {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+/*Text rules*/
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h3,p {
+	width: 50%;
+	margin: 20px auto;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+	color: #555;
+	line-height:1.6;
+}
+@media (max-width:1000px) {
+	h3, p {
+		width: 75%;
+	}
+}
+@media (max-width:750px) {
+	h3, p {
+		width: 100%;
+	}
+}
